@@ -1,0 +1,167 @@
+body{
+  background-color: #cdbdae;
+}
+#servicios{
+  text-align: center;
+}
+/*Portada*/
+header {
+  background: linear-gradient(to bottom, #1f1f1f, #fa4b00); 
+  color: #FAFAFA;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 50px 0;
+}
+.portada h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.portada p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+/*barra de navegacion*/
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FAFAFA;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #FAFAFA;
+}
+/*Sección Servicios*/
+.titulos{
+  background-color: #1f1f1f;
+  color:#fa4b00;
+  text-decoration: underline;
+}
+.contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+.info{
+  width: 600px;
+  height: 300px;
+  font-size: larger;
+  margin-left: 25px;
+  margin-bottom: 5px;
+
+}
+.imgServicios{
+  width: 300px;
+  height: 300px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
+
+/*Nuestros Planes*/
+.parrafo{
+  font-size: larger;
+  text-align: center;
+  color: #1f1f1f;
+}
+.divAnimado {
+  width: 400px;
+  height: 400px;
+  background-color: #cdbdae;
+  border: solid #1f1f1f;
+  border-radius: 20px;
+  animation: cambioColor 5s linear infinite;
+}
+
+@keyframes cambioColor {
+  0% {
+      background-color: #fa4b00;
+  }
+  50% {
+      background-color: #1f1f1f;
+  }
+  100% {
+      background-color:#7a5b3edb;
+  }
+}
+.membresia{
+  color: #FAFAFA;
+  text-align: center;
+  text-decoration: underline;
+}
+.listaMembresias{
+  color: #FAFAFA;
+  font-size: large;
+}
+.contBoton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.precio{
+  font-size: xxx-large;
+  color: #FAFAFA;
+}
+.contratar{
+  background-color: #cdbdae;
+  color: #1f1f1f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transición de cambio de color */
+}
+.contratar:hover{
+background-color: #8d8782;
+}
+.contratacion{
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+/*footer*/
+footer {
+  background: linear-gradient(to bottom, #1f1f1f, #fa4b00); 
+  color: #fafafa;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.logoRedes{
+  width: 30px;
+}
+@media (max-width: 768px) {
+  .contenedor {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  .info{
+    max-width: 100%;
+    height:auto;
+    font-size: larger;
+}
+.imgServicios{
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+}
